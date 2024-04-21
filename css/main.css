@@ -341,7 +341,7 @@
   display: flex;
 }
 .categories__right {
-  width: 840px;
+  max-width: 840px;
 }
 .categories__top {
   display: flex;
@@ -408,7 +408,7 @@
   grid-row-gap: 70px;
 }
 .categories__top__cards__card {
-  width: 258px;
+  max-width: 258px;
 }
 .categories__top__cards__card_bg {
   background-color: #fbfbfb;
@@ -417,8 +417,6 @@
 }
 .categories__top__cards__card_bg:hover {
   border-top: 1px solid #46a358;
-
-
 }
 .categories__top__cards__bg__hoverlinks {
   width: 125px;
@@ -433,7 +431,7 @@
 .categories__top__cards__bg:hover {
   display: flex;
 }
-.categories__top__cards__bg__hoverlinks-active{
+.categories__top__cards__bg__hoverlinks-active {
   display: flex;
 }
 .categories__top__cards__bg__hoverlinks__shop {
@@ -494,4 +492,35 @@
   background-color: #46a358;
   color: white;
   padding: 8px 11px;
+}
+
+@media (max-width: 1305px) {
+  .categories__contanier {
+    flex-direction: column-reverse;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .categories__infos {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .categories__right{
+    max-width: 840px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-windth: 860px) {
+  .categories__contanier {
+    width: 100%;
+  }
+  .categories__top__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 40px;
+    grid-row-gap: 32px;
+  }
+  
 }
