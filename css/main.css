@@ -103,7 +103,7 @@
 .header__btn:hover {
   background-color: #3d3d3d;
   color: yellowgreen;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .header__btn__svg {
   display: flex;
@@ -177,10 +177,10 @@
   text-align: left;
   cursor: pointer;
 }
-.hero__headings__btn:hover{
+.hero__headings__btn:hover {
   background-color: #3d3d3d;
   color: yellowgreen;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .hero__right__bg__img {
   display: flex;
@@ -347,10 +347,10 @@
   margin-bottom: 46px;
   cursor: pointer;
 }
-.ategories__infos__heading__input__btn:hover{
+.ategories__infos__heading__input__btn:hover {
   color: yellowgreen;
   background-color: #3d3d3d;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .categories__infos__heading__img {
   display: flex;
@@ -554,7 +554,7 @@
 .findmore__card {
   display: flex;
   gap: 10px;
-  background-color: #FBFBFB;
+  background-color: #fbfbfb;
   padding: 37px 30px 10px 5px;
 }
 .findmore__img__section {
@@ -594,17 +594,17 @@
   background-color: #46a358;
   color: white;
   border-radius: 6px;
-  font-family: Cera Pro ,monospace;
+  font-family: Cera Pro, monospace;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
   margin-left: auto;
   cursor: pointer;
 }
-.findmore__btn:hover{
+.findmore__btn:hover {
   background-color: #3d3d3d;
   color: yellowgreen;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 .finmore__btn__span {
   display: flex;
@@ -612,17 +612,231 @@
 
 /* findmore responsive */
 
-@media(max-width: 1305px){
-  .findmore__contanier{
+@media (max-width: 1305px) {
+  .findmore__contanier {
     flex-direction: column;
   }
-  .findmore__card{
+  .findmore__card {
     margin-left: auto;
     margin-right: auto;
   }
 }
-@media(max-width: 620px){
-  .findmore__btn{
+@media (max-width: 620px) {
+  .findmore__btn {
     padding: 9px 10px;
+  }
+}
+
+.blog {
+  padding-top: 69px;
+  padding-bottom: 50px;
+}
+.blog__contanier {
+  text-align: center;
+}
+.blog__title {
+  color: #3d3d3d;
+  font-family: Cera Pro, monospace;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 16px;
+  margin-bottom: 15px;
+}
+.blog__text {
+  color: #3d3d3d;
+  font-family: Cera Pro, monospace;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+.blog__carts {
+  display: flex;
+  gap: 44px;
+}
+.blog__carts__cart {
+  max-width: 268px;
+  background-color: #fbfbfb;
+}
+.blog__cart__img {
+  display: flex;
+}
+.blog__cart__img__info {
+  padding: 9px 11px 12px 15px;
+  text-align: left;
+  width: 242px;
+}
+.blog__cart__img__time {
+  color: #46a358;
+  margin-bottom: 4px;
+  font-family: Cera Pro, monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+}
+.blog__cart__title {
+  color: #3d3d3d;
+  font-family: Cera Pro, monospace;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+.blog__cart__text {
+  color: #727272;
+  font-family: Cera Pro, monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 9px;
+}
+.blog__cart__link {
+  color: #3d3d3d;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  text-decoration: none;
+  font-family: Cera Pro, monospace;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  text-align: left;
+}
+.blog__cart__link:hover {
+  color: #46a358;
+  transition: all 0.3s;
+}
+.blog__cart__link__span {
+  display: flex;
+  align-items: center;
+}
+
+/* blog responsive */
+
+@media (max-width: 1260px) {
+  .blog__carts {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .blog__title {
+    text-align: left;
+  }
+
+  .blog__text {
+    width: 50%;
+    text-align: left;
+  }
+}
+
+@media (max-width: 700px) {
+  .blog__title {
+    font-size: 25px;
+    text-align: left;
+  }
+  .blog__text {
+    font-size: 14px;
+    width: 50%;
+    text-align: left;
+  }
+}
+
+.footer {
+  padding-top: 62px;
+  padding-bottom: 13px;
+}
+.footer__contanier {
+  background-color: #fbfbfb;
+}
+.footer__top {
+}
+.footer__top__section {
+  display: flex;
+  gap: 62px;
+}
+.footer__top__section__cart {
+  max-width: 204px;
+  padding: 25px 34px 24px 23px;
+}
+.footer__top__section__cart__img {
+  display: flex;
+  margin-bottom: 15px;
+}
+.footer__top__cart__title {
+  font-family: Cera Pro, monospace;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: #3d3d3d;
+  margin-bottom: 9px;
+}
+.footer__top__cart__text {
+  font-family: Cera Pro, monospace;
+  font-size: 14px;
+  line-height: 22px;
+}
+.footer__top__contact {
+  padding: 37px 25px 33px 0;
+}
+.footer__top__contact__title {
+  font-family: Cera Pro, monospace;
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: 700;
+  line-heig
+  
+  ht: 16px;
+  text-align: left;
+}
+.footer__top__contact__form {
+  display: flex;
+  margin-bottom: 17px;
+}
+.footer__top__contact__inp {
+  width: 270px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 11px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  box-shadow: -2px 3px 20px #0000000f;
+  font-family: Cera Pro, monospace;
+  color: #ACACAC;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.footer__top__contact__btn {
+  width: 85px;
+  padding: 12px 25px 12px 26px;
+  background-color: #46a358;
+  border-radius: 0 6px 6px 0;
+  border: none;
+  font-family: Cera Pro, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  color: white;
+}
+.footer__top__contact__text {
+  font-family: Cera Pro, monospace;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #727272;
+}
+
+/* footer top responsive */
+
+@media(max-width: 1230px){
+  .footer__top__section{
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+  .footer__top__contact{
+    width: 360px;
   }
 }
