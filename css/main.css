@@ -1,7 +1,22 @@
+@import url(https://db.onlinewebfonts.com/c/917a69d24b88e2d4d2ca803c0605bd59?family=Cera+PRO+Regular);
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+@font-face {
+  font-family: "Cera PRO Regular";
+  src: url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.eot");
+  src: url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.woff2")
+      format("woff2"),
+    url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.woff")
+      format("woff"),
+    url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.ttf")
+      format("truetype"),
+    url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.svg#Cera PRO Regular")
+      format("svg");
 }
 .contanier {
   max-width: 1291px;
@@ -39,7 +54,7 @@
 }
 .header__nav__link {
   text-decoration: none;
-  font-family: Cera Pro, monospace;
+  font-family: "Cera PRO Regular";
   font-size: 16px;
   line-height: 20.11px;
   color: #3d3d3d;
@@ -146,7 +161,7 @@
   margin-bottom: 7px;
 }
 .hero__headings__title {
-  font-family: Cera Pro, monospace;
+  font-family: "Cera PRO Regular";
   font-size: 75px;
   font-weight: 900;
   line-height: 70px;
@@ -741,12 +756,9 @@
 
 .footer {
   padding-top: 62px;
-  padding-bottom: 13px;
 }
 .footer__contanier {
   background-color: #fbfbfb;
-}
-.footer__top {
 }
 .footer__top__section {
   display: flex;
@@ -782,9 +794,7 @@
   margin-bottom: 18px;
   font-size: 18px;
   font-weight: 700;
-  line-heig
-  
-  ht: 16px;
+  line-height: 16px;
   text-align: left;
 }
 .footer__top__contact__form {
@@ -800,7 +810,7 @@
   border-radius: 6px 0 0 6px;
   box-shadow: -2px 3px 20px #0000000f;
   font-family: Cera Pro, monospace;
-  color: #ACACAC;
+  color: #acacac;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
@@ -830,13 +840,197 @@
 
 /* footer top responsive */
 
-@media(max-width: 1230px){
-  .footer__top__section{
+@media (max-width: 1230px) {
+  .footer__top__section {
     flex-wrap: wrap;
     gap: 25px;
     justify-content: center;
   }
-  .footer__top__contact{
+  .footer__top__contact {
     width: 360px;
+  }
+}
+
+.footer__center {
+  padding-top: 25px;
+  padding-bottom: 20px;
+  background-color: #46a3581a;
+}
+.footer__center__setion {
+  display: flex;
+  align-items: center;
+  gap: 87px;
+}
+.footer__center__setion__links {
+  display: flex;
+  gap: 60px;
+}
+.footer__center__section__img {
+  display: flex;
+}
+.footer__center__section__locetion {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: Cera Pro, monospace;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  text-decoration: none;
+}
+.footer__center__section__locetion__span {
+  color: #3d3d3d;
+}
+.footer__center__section__locetion__span:hover {
+  color: #46a358;
+  transition: all 0.2s;
+}
+
+/* footer center responsive */
+
+@media (max-width: 1145px) {
+  .footer__center__setion {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .footer__center__setion__links {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+.footer__button {
+  padding-top: 33px;
+  padding-bottom: 13px;
+}
+.footer__button__contanier {
+  background-color: #fbfbfb;
+  margin-bottom: 6px;
+}
+.footer__button__contanier__navbar {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+.footer__button__navbar__myacct__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__button__navbar__myacct__title {
+  font-family: Cera Pro, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+}
+.footer__button__navbar__myacct__item {
+  list-style: none;
+}
+.footer__button__navbar__myacct__link {
+  font-family: Cera Pro, monospace;
+  text-decoration: none;
+  color: #3d3d3d;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: left;
+}
+.footer__button__navbar__myacct__link:hover{
+  color: #46a358;
+  transition: all .2s ;
+  font-weight: 600;
+}
+.footer__button__navbar__help__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer__button__navbar__help__title {
+  font-family: Cera Pro, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+}
+.footer__button__navbar__help__item {
+  list-style: none;
+}
+.footer__button__navbar__cotegor__list {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+.footer__button__navbar__cotegor__title {
+  font-family: Cera Pro, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+}
+.footer__button__navbar__cotegor__item {
+  list-style: none;
+}
+.footer__button__navbar__media {
+  max-width: 225px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+}
+.foooter__button__navbar__media__title {
+  font-family: Cera Pro, monospace;
+  color: #3d3d3d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.foooter__button__navbar__media__links {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 33px;
+}
+.foooter__button__navbar__media__links__link {
+  display: flex;
+}
+.foooter__button__navbar__media__links__link:hover{
+  opacity: .6;
+}
+.foooter__button__navbar__media__links__link__svg {
+  display: flex;
+}
+.foooter__button__navbar__media__title2 {
+  font-family: Cera Pro, monospace;
+  color: #3d3d3d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.footer__button__navbar__media__img {
+  width: 224px;
+  object-fit: cover;
+  display: flex;
+}
+.footer__button__product {
+  padding: 6px 0 13px 0;
+  text-align: center;
+  font-family: Cera Pro ,monospace;
+  color: #3D3D3D;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+
+
+/* footer button responsive */
+
+
+@media(max-width: 1040px){
+  .footer__button__contanier__navbar{
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
   }
 }
