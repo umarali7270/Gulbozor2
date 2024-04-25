@@ -1,22 +1,7 @@
-@import url(https://db.onlinewebfonts.com/c/917a69d24b88e2d4d2ca803c0605bd59?family=Cera+PRO+Regular);
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-@font-face {
-  font-family: "Cera PRO Regular";
-  src: url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.eot");
-  src: url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.woff2")
-      format("woff2"),
-    url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.woff")
-      format("woff"),
-    url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.ttf")
-      format("truetype"),
-    url("https://db.onlinewebfonts.com/t/917a69d24b88e2d4d2ca803c0605bd59.svg#Cera PRO Regular")
-      format("svg");
 }
 .contanier {
   max-width: 1291px;
@@ -54,7 +39,7 @@
 }
 .header__nav__link {
   text-decoration: none;
-  font-family: "Cera PRO Regular";
+  font-family: "Cera Pro", monospace;
   font-size: 16px;
   line-height: 20.11px;
   color: #3d3d3d;
@@ -438,7 +423,7 @@
   grid-row-gap: 70px;
 }
 .categories__top__cards__card {
-  max-width: 258px;
+  width: 100%;
 }
 .categories__top__cards__card_bg {
   height: 300px;
@@ -555,6 +540,13 @@
   }
   .categories_top {
     flex-direction: column;
+  }
+  .categories__top__cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
   }
 }
 
@@ -923,6 +915,7 @@
   font-weight: 700;
   line-height: 16px;
   text-align: left;
+  margin-bottom: 9px;
 }
 .footer__button__navbar__myacct__item {
   list-style: none;
@@ -935,9 +928,9 @@
   line-height: 30px;
   text-align: left;
 }
-.footer__button__navbar__myacct__link:hover{
+.footer__button__navbar__myacct__link:hover {
   color: #46a358;
-  transition: all .2s ;
+  transition: all 0.2s;
   font-weight: 600;
 }
 .footer__button__navbar__help__list {
@@ -951,6 +944,7 @@
   font-weight: 700;
   line-height: 16px;
   text-align: left;
+  margin-bottom: 9px;
 }
 .footer__button__navbar__help__item {
   list-style: none;
@@ -966,6 +960,7 @@
   font-weight: 700;
   line-height: 16px;
   text-align: left;
+  margin-bottom: 9px;
 }
 .footer__button__navbar__cotegor__item {
   list-style: none;
@@ -993,8 +988,8 @@
 .foooter__button__navbar__media__links__link {
   display: flex;
 }
-.foooter__button__navbar__media__links__link:hover{
-  opacity: .6;
+.foooter__button__navbar__media__links__link:hover {
+  opacity: 0.6;
 }
 .foooter__button__navbar__media__links__link__svg {
   display: flex;
@@ -1016,21 +1011,340 @@
 .footer__button__product {
   padding: 6px 0 13px 0;
   text-align: center;
-  font-family: Cera Pro ,monospace;
-  color: #3D3D3D;
+  font-family: Cera Pro, monospace;
+  color: #3d3d3d;
   font-size: 14px;
   line-height: 30px;
 }
 
-
-
 /* footer button responsive */
 
-
-@media(max-width: 1040px){
-  .footer__button__contanier__navbar{
+@media (max-width: 1040px) {
+  .footer__button__contanier__navbar {
     flex-wrap: wrap;
     gap: 60px;
     justify-content: center;
   }
 }
+
+.shopping {
+  padding-top: 18px;
+  padding-bottom: 47px;
+}
+.shopping__contanier {
+}
+.shopping__top__list {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  margin-bottom: 43px;
+}
+.shopping__top__item {
+  list-style: none;
+}
+.shopping__top__link {
+  text-decoration: none;
+  font-family: Cera Pro, monospace;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: left;
+  color: #3d3d3d;
+}
+.shopping__top__link:hover {
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.shopping__duble__div {
+  display: flex;
+  gap: 52px;
+}
+.shopping__duble__div__img__detachmend {
+  display: flex;
+}
+.shopping__duble__div__img__detachmend__mini {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.shopping__duble__div__img__detacgmend__minipng {
+  display: flex;
+  width: 99px;
+}
+.shopping__duble__div__img__detacgmend__minipng:hover {
+  border: 1px solid #46a358;
+  transition: all 0.3s;
+}
+.shopping__duble__div__img__detachmend__big {
+}
+.shopping__duble__div__img__detachmend__big__img {
+  display: flex;
+}
+.shopping__duble__div__img__detachmend__big__img__search {
+  display: flex;
+  justify-content: center;
+}
+.shopping__duble__div__infos {
+}
+.shopping__duble__div__infos__title {
+  font-family: Cera Pro, monospace;
+  margin-bottom: 21px;
+  color: #3d3d3d;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 16px;
+}
+.shopping__duble__div__infos__pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 0.2px solid #46a358;
+  padding-bottom: 13px;
+}
+.shopping__duble__div__infos__pricing__many__text {
+  font-family: Cera Pro, monospace;
+  color: #46a358;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: left;
+}
+.shopping__duble__div__infos__pricing__star__text {
+  font-family: Cera Pro, monospace;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: left;
+  color: #3d3d3d;
+}
+.shopping__duble__div__infos__title2 {
+  font-family: Cera Pro, monospace;
+  color: #3d3d3d;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  margin-bottom: 10px;
+}
+.shopping__duble__div__infos__text {
+  font-family: Cera Pro, monospace;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #727272;
+  margin-bottom: 24px;
+}
+.shopping__duble__div__infos__size__text {
+  font-family: Cera Pro, monospace;
+  color: #3d3d3d;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+  margin-bottom: 11px;
+}
+.shopping__duble__div__infos__size__text__sizes {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 23px;
+}
+.shopping__duble__div__infos__size__text__sizes__link {
+  text-decoration: none;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #eaeaea;
+  justify-content: center;
+  border-radius: 50%;
+  font-family: Cera Pro, monospace;
+  color: #727272;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: center;
+}
+.shopping__duble__div__infos__size__text__sizes__link:hover {
+  border: 1px solid #46a358;
+  color: #46a358;
+  font-weight: 700;
+  transition: all 0.3;
+}
+.shopping__duble__div__infos__buy__btns {
+  display: flex;
+  gap: 26px;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.shopping__duble__div__infos__buy__btns__plus__minus {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.shopping__duble__div__infos__buy__btns__plus__minus__num {
+  text-decoration: none;
+  color: #3d3d3d;
+  font-family: Cera Pro, monospace;
+  font-size: 20px;
+  line-height: 10px;
+  text-align: left;
+}
+.shopping__duble__div__infos__buy__btns__plus__minus__link {
+  width: 33px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #46a358;
+  border-radius: 29px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.shopping__duble__div__infos__buy__btns__plus__minus__link:hover {
+  background-color: white;
+  color: #3d3d3d;
+  font-weight: 700;
+  border: 1px solid #46a358;
+}
+.shopping__duble__div__infos__buy__btns__buynow {
+  padding: 11px 32px 9px 32px;
+  background-color: #46a358;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  font-family: Cera Pro, monospace;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+.shopping__duble__div__infos__buy__btns__buynow:hover {
+  padding: 10px 31px 8px 31px;
+  background-color: white;
+  color: #46a358;
+  border: 1px solid #46a358;
+}
+.shopping__duble__div__infos__buy__btns__addcart {
+  padding: 11px 19px 9px 20px;
+  color: #46a358;
+  border: 1px solid #46a358;
+  border-radius: 6px;
+  background-color: white;
+  font-family: Cera Pro, monospace;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+.shopping__duble__div__infos__buy__btns__addcart:hover {
+  background-color: #46a358;
+  border: none;
+  color: white;
+  padding: 12px 20px 10px 21px;
+}
+.shopping__duble__div__infos__buy__btns__like {
+  display: flex;
+}
+.shopping__duble__div__infos__buy__btns__like:hover {
+  opacity: 0.5;
+}
+.shopping__duble__div__infos__addres {
+}
+.shopping__duble__div__infos__addres__id__text {
+  font-family: Cera Pro, monospace;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: left;
+  color: #a5a5a5;
+  margin-bottom: 10px;
+}
+.shopping__duble__div__infos__addres__id__text__span {
+  font-family: Cera Pro, monospace;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: left;
+  color: #727272;
+}
+.shopping__duble__div__infos__addres__categor__text {
+  font-family: Cera Pro, monospace;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: left;
+  color: #a5a5a5;
+  margin-bottom: 10px;
+}
+.shopping__duble__div__infos__addres__categor__text__span {
+  font-family: Cera Pro, monospace;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: left;
+  color: #727272;
+}
+.shopping__duble__div__infos__addres__tags__text {
+  font-family: Cera Pro, monospace;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: left;
+  color: #a5a5a5;
+  margin-bottom: 10px;
+}
+.shopping__duble__div__infos__addres__tags__text__span {
+  font-family: Cera Pro, monospace;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: left;
+  color: #727272;
+}
+.shopping__duble__div__infos__addres__links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.shopping__duble__div__infos__addres__links__link__text {
+  font-family: Cera Pro,monospace;
+  color: #3d3d3d;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  text-align: left;
+}
+.shopping__duble__div__infos__addres__links__link {
+  display: flex;
+}
+.shopping__duble__div__infos__addres__links__link:hover{
+  opacity: .5;
+}
+
+/* shopping responsive */
+
+@media (max-width: 1100px) {
+  .shopping__duble__div{
+    flex-direction: column ;
+  }
+}
+
+
+@media (max-width: 550px) {
+  .shopping__duble__div__infos{
+    width: 100%;
+  }
+  .shopping__duble__div__img__detachmend__big__img{
+    width: 100%;
+  }
+  .shopping__duble__div__img__detacgmend__minipng{
+    width: 100%;
+  }
+  .shopping__duble__div__infos__buy__btns{
+    flex-wrap: wrap;
+  }
+  .shopping__duble__div__infos__pricing{
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+
